@@ -52,32 +52,8 @@ public static void myscreenshot_onfailure(ITestResult Result) throws IOException
 			System.out.println("Exception while taking screenshot "+e.getMessage());
 		} 
 }
-driver.quit();
 }
 
  
  
 }
-/*
-@AfterTest
-public static void failurescreenshot(ITestResult Result) throws IOException
-{ 
-	if(ITestResult.SUCCESS==Result.getStatus())
-	{
-TakesScreenshot ts=(TakesScreenshot) driver;
-File target=new File("C://screenshot/screenshot5.png");
-File src=ts.getScreenshotAs(OutputType.FILE);
-
-FileUtils.copyFile(src, target);
-
-String Testname =Result.getName();
-
-	System.out.println("the drag and drop have Happened:Test case:"+Testname);
-
-}}*/
-
-
-
-
-
-
